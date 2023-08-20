@@ -44,7 +44,15 @@ INSTALLED_APPS = [
     'cart', # Django app
 
     'mathfilters', # Django app
+
+    'account', # Django app
+
+    'crispy_forms', # Crispy forms
+
+    
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -139,3 +147,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email verification settings:
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = 'True'
+
+EMAIL_HOST_USER = 'mqnifestkelvin@gmail.com' # The host email that sends password reset emails
+EMAIL_HOST_PASSWORD = 'jgbywoctjevaikcd'
