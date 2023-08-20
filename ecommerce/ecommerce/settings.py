@@ -155,5 +155,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = 'True'
 
-EMAIL_HOST_USER = 'mqnifestkelvin@gmail.com' # The host email that sends password reset emails
-EMAIL_HOST_PASSWORD = 'jgbywoctjevaikcd'
+EMAIL_HOST_USER = '' # The host email that sends password reset emails
+EMAIL_HOST_PASSWORD = ''
